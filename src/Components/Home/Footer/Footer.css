@@ -1,0 +1,13 @@
+.footer_main_div{
+    background-color: #191527;
+    color: white;
+    padding: 1rem 3rem;
+}
+
+.left_side_footer_copyright{
+    font-size: 1.1rem;
+}
+
+.left_side_footer_copyright svg{
+    margin: 0 .4rem;
+}

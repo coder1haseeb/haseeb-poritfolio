@@ -1,0 +1,133 @@
+.swiper {
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: var(--swiper-pagination-bottom, 8px);
+  top: 19rem;
+  left: 0;
+  width: 100%;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+.swiper-cube .swiper-cube-shadow:before {
+  content: '';
+  background: #ffffff2e;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  filter: blur(50px);
+}
+.swiper-cube .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.swiper-slide img {
+  display: block;
+  height: 15rem;
+  object-fit: contain;
+}
+.skills_main_div_page {
+  margin-top: 3rem;
+}
+.top_area_of_skills_heading {
+  background:linear-gradient(to right,#e60058 , #012fae);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 2.5rem;
+  font-weight: 500;
+  width: 7rem;
+  margin-bottom: 3rem;
+}
+.skills_main_div_page{
+
+}
+.sinlge_clas_for_swiper{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.text_for_slide_{
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+}
+.logo_for_single_slide_div{
+  background:linear-gradient(to right,#e60058 , #012fae);
+  height: 14rem;
+  width: 14rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo_for_single_slide{
+  color: white;
+  font-size: 15rem;
+  padding: 2rem;
+}
+.lower_skills_info_div{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+.left_side_skills_data{
+  width: 40%;
+}
+.right_side_skills_cube_slides{
+  background-color: rgba(29, 18, 66, 0.467);
+  width: 30%;
+  border-radius: 13px;
+}
+.left_side_skills_data{
+  color: white;
+  font-size: 1.2rem;
+  word-spacing: 3px;
+}
+.skills_points_section_about_page{
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+.skills_points_section_about_page p{
+  font-size: 1.3rem;
+  color: rgba(255, 255, 255, 1);
+  padding: .3rem;
+  background-color: rebeccapurple;
+  background:linear-gradient(to right,#e60058 , #012fae);
+  border-radius: 7px;
+}
+.skills_points_section_about_page p span{
+  margin-right: 1rem;
+  color: rgba(255, 255, 255, 1);
+}
+@media only screen and (max-width: 1250px){
+  .left_side_skills_data{
+    width: 45%;
+  }
+  .right_side_skills_cube_slides{
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 850px){
+  .lower_skills_info_div{
+    flex-direction: column;
+  }
+  .left_side_skills_data{
+    width: 90%;
+  }
+  .right_side_skills_cube_slides{
+    width: 90%;
+    margin: 2rem 0;
+  }
+}

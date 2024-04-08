@@ -1,0 +1,179 @@
+.hero_section_div_main{
+    height: calc(100vh - 139px);
+    background-color: #191527;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    overflow: hidden;
+}
+.hero_section_info_div{
+    /* background-color: red; */
+    width: 40%;
+    margin-left: 15rem;
+    
+}
+
+.i_am_uppper_div{
+    color: white;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.role_change_div {
+    font-size: 5rem;
+    color: white;
+    font-weight: 600;
+    display: inline-block;
+    position: relative;
+}
+
+.role_change_div p::after {
+    content: "";
+    position: absolute;
+    left: 0%; /* Start position off-screen */
+    width: 100%;
+    height: 100%;
+    background-color: #191527;
+    border-left: 3px solid #e600a1;
+    animation: cursor-move 4s infinite;
+    animation-steps: calc(1s * var(--animation-steps)); /* Dynamic duration */
+}
+
+@keyframes cursor-move {
+    50% {
+        left: 100%;
+        border-left: 3px solid #6f01ae;
+    }
+}
+  
+.addtional_hero_section_div{
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.6);
+    width: 90%;
+}
+
+.explore_link_hero_section{
+    margin-top: 2rem;
+}
+
+.explore_link_hero_section button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 1rem;
+    background: linear-gradient(to right,#e600a1 , #6f01ae);
+    border-radius: 10px;
+}
+  
+
+
+
+
+.outer_most_image_div{
+    width: 38%;
+}
+.image_div_custom{
+    height: 30rem;
+    width: 30rem;
+    background: linear-gradient(to right,#e600a1 , #6f01ae);
+    border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+    position: relative;
+}
+.image_div_custom::before{
+    content: '';
+    position: absolute;
+    height: 2rem;
+    width: 2rem;
+    background: linear-gradient(to right,#e600a1 , #6f01ae);
+    border-radius: 50%;
+}
+
+.inner_image_div{
+    background-image:url('../../../Assets/haseeeb.png');
+    border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 1550px){
+    .hero_section_info_div{
+        width: 45%;
+        margin: 0%;
+    }
+    .role_change_div{
+        font-size: 4rem;
+    }
+    .i_am_uppper_div{
+        font-size: 2.5rem;
+    }  
+    .explore_link_hero_section button{
+        font-size: 1.1rem;
+        padding: 0.8rem;
+    }
+}
+
+@media only screen and (max-width:1200px){
+    .image_div_custom{
+        height: 25rem;
+        width: 25rem;
+    }
+    
+    .outer_most_image_div{
+        width: 45%;
+    }
+    .hero_section_info_div{
+        width: 50%;
+    }
+}
+@media only screen and (max-width:1000px){
+    
+    .role_change_div{
+        font-size: 3.3rem;
+    }
+    .i_am_uppper_div{
+        font-size: 2rem;
+    }  
+}
+@media only screen and (max-width:900px){
+    .hero_section_div_main{
+        flex-direction: column-reverse;
+    }
+    .outer_most_image_div{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero_section_info_div{
+        width: 90%;
+    }
+    .role_change_div p , .i_am_uppper_div{
+        text-align: center;
+    }
+}
+@media only screen and (max-width:550px){
+    .hero_section_div_main{
+        min-height: 100vh;
+        height: max-content;
+        padding-top: 2rem;
+    }
+    .image_div_custom{
+        width: 20rem;
+        height: 20rem;
+    }
+    .role_change_div{
+        font-size: 2.5rem;
+    }
+    .explore_link_hero_section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

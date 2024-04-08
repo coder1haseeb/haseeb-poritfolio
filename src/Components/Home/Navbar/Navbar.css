@@ -1,0 +1,14 @@
+
+.nav-item{
+    margin: 0 1.5rem;
+}
+
+.navbar-brand{
+    font-size: 1.6rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+.nav-link{
+    cursor: pointer;
+    margin-top: 9px;
+}

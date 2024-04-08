@@ -1,0 +1,33 @@
+.clietns_div_about_page{
+    width: 85%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 3rem;
+}
+.our_clients_upper_div{
+    background: linear-gradient(to right,#e60058 , #012fae);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 2.5rem;
+    font-weight: 500;
+    width: 14rem;
+    margin-bottom: 3rem;
+}
+.our_clients_lower_div{
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.single_client_div{
+    height: 20rem;
+    width: 20rem;
+    margin: 1rem 2rem 2rem 2rem;
+}
+
+.single_client_div img{
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
